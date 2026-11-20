@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dhwani &amp; Pinkesh – Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff6e5;--card:#fffdf8;--ink:#5a1a1a;--soft:#7d4a3a;--gold:#b8862b;--sun:#e8742a;--line:#e6cf9f;--hero1:#ffd9a0;--hero2:#fff6e5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a1210;--card:#3a1b16;--ink:#fbe9c8;--soft:#e2bf92;--gold:#e0b04e;--sun:#f0914a;--line:#6b4228;--hero1:#5a2a1a;--hero2:#2a1210;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#2a1210;--card:#3a1b16;--ink:#fbe9c8;--soft:#e2bf92;--gold:#e0b04e;--sun:#f0914a;--line:#6b4228;--hero1:#5a2a1a;--hero2:#2a1210;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;font-size:19px;line-height:1.5;text-align:center}
+.hi{font-family:'Tiro Devanagari Hindi','Noto Serif Devanagari',serif}
+section{padding:56px 22px;max-width:640px;margin:0 auto}
+h1,h2{font-family:'Cinzel Decorative',Georgia,serif;font-weight:700;margin:0;color:var(--ink)}
+h2{font-size:26px;margin-bottom:6px}
+.orn{color:var(--gold);letter-spacing:.5em;font-size:18px;margin:10px 0}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 22%,#ffb347 0,#ffb34700 38%),linear-gradient(var(--hero1),var(--hero2));max-width:none;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(135deg,transparent 49%,var(--bg) 50%) 0 0/60px 90px repeat-x}
+.jsr{font-size:26px;color:var(--sun)}
+.hero h1{font-size:clamp(34px,10vw,58px);line-height:1.2;margin:18px 0 8px}
+.hero h1 span{display:block;color:var(--gold);font-size:.5em}
+.sub{font-style:italic;color:var(--soft)}
+.btn{display:inline-block;margin-top:26px;padding:12px 28px;border:1px solid var(--gold);border-radius:40px;color:var(--ink);text-decoration:none;font-weight:600;background:transparent;font:inherit;font-weight:600;cursor:pointer}
+.btn.fill{background:var(--sun);border-color:var(--sun);color:#fff}
+.shloka{font-size:20px;color:var(--soft);margin:14px 0 26px}
+.names{font-family:'Cinzel Decorative',serif;font-size:34px;color:var(--sun);margin:8px 0}
+.small{font-size:16px;color:var(--soft);text-transform:uppercase;letter-spacing:.15em}
+.date{display:flex;justify-content:center;gap:14px;margin:22px 0}
+.date div{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:12px 18px;min-width:84px}
+.date b{display:block;font-size:34px;font-family:'Cinzel Decorative',serif;color:var(--sun)}
+.ev{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 18px;margin:18px 0;position:relative}
+.ev:before{content:"❁";position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--bg);color:var(--gold);padding:0 10px;font-size:22px}
+.ev h3{font-family:'Cinzel Decorative',serif;font-size:24px;margin:6px 0 2px}
+.ev .d{color:var(--sun);font-weight:600}
+.ev a{color:var(--ink);font-size:16px;margin:6px 8px 0;display:inline-block}
+.venue{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px 18px}
+form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 18px;text-align:left}
+label,.lbl{display:block;font-weight:600;margin:14px 0 6px}
+input[type=text]{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{margin:0;font-weight:400;border:1px solid var(--line);border-radius:30px;padding:6px 14px;cursor:pointer;display:flex;align-items:center;gap:6px}
+.chips input{accent-color:var(--sun)}
+.cnt{display:flex;gap:10px;justify-content:center;margin-top:20px}
+.cnt div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 6px;width:76px}
+.cnt b{display:block;font-size:30px;font-family:'Cinzel Decorative',serif;color:var(--sun)}
+.cnt span{font-size:14px;color:var(--soft)}
+footer{padding:30px 20px 40px;color:var(--soft);font-size:15px}
+.scene{position:absolute;inset:0;width:100%;height:100%}.hero>*:not(.scene){position:relative;z-index:2}
+.hero h1{text-shadow:0 2px 0 #fff8,0 0 30px #ffd9a0}.hero .sub{color:#5a1a1a;font-weight:600}
+.sunrot{animation:spin 90s linear infinite;transform-box:fill-box}.sunrot use{transform-origin:0 0}@keyframes spin{to{transform:translate(200px,250px) rotate(360deg)}}
+.bells g>g,.bells>g{transform-origin:top center;transform-box:fill-box;animation:sw 3.6s ease-in-out infinite}.bells .b2{animation-delay:-1.8s}@keyframes sw{50%{transform:rotate(7deg)}0%,100%{transform:rotate(-7deg)}}
+.mand-bg{position:absolute;left:50%;top:50%;width:min(560px,130%);transform:translate(-50%,-50%);opacity:.16;z-index:0;animation:rot 120s linear infinite;pointer-events:none}@keyframes rot{to{transform:translate(-50%,-50%) rotate(360deg)}}
+#invite>*:not(.mand-bg){position:relative;z-index:1}
+section.fade:before{content:"";display:block;height:40px;margin-bottom:14px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 40'%3E%3Cg fill='none' stroke='%23b8862b' stroke-width='1.4'%3E%3Cpath d='M10 20h82M148 20h82'/%3E%3Cpath d='M120 6q-14 14 0 28q14-14 0-28zM120 12q-8 8 0 16q8-8 0-16zM104 14q-16 4-14 16q14 0 14-16zM136 14q16 4 14 16q-14 0-14-16z'/%3E%3C/g%3E%3Ccircle cx='96' cy='20' r='3' fill='%23b8862b'/%3E%3Ccircle cx='144' cy='20' r='3' fill='%23b8862b'/%3E%3C/svg%3E") center/contain no-repeat}
+#events{position:relative}#events:before{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:2px dashed var(--line);z-index:0}
+.ev{z-index:1;border:2px solid var(--gold);box-shadow:0 0 0 5px var(--card),0 0 0 6px var(--line),0 12px 28px #b8862b33;background:linear-gradient(var(--card),var(--card)) padding-box,var(--card)}
+.ev:after{content:"";position:absolute;inset:8px;border:1px dashed var(--line);border-radius:12px;pointer-events:none}
+.ev h3{background:linear-gradient(90deg,var(--sun),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.date div,.cnt div,.venue,form{box-shadow:0 8px 22px #b8862b26;border:1.5px solid var(--gold)}
+.venue{background:radial-gradient(circle at 50% 0,#ffd9a044,transparent 60%),var(--card)}
+.petal{position:fixed;top:-20px;width:12px;height:16px;border-radius:70% 0 70% 0;background:#f08a4b;opacity:.7;pointer-events:none;z-index:9;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(540deg) translateX(40px)}}
+.fade{opacity:0;transform:translateY(18px);transition:.8s}.fade.in{opacity:1;transform:none}
+.hero .scene{display:none}.hero:after{display:none}.hero>.tmp{position:absolute;z-index:1;inset:0;width:100%;height:100%}
+.hero{background:radial-gradient(circle at 50% 45%,#7a1818,#3a090b 72%)}
+.hero h1{color:#ffe6b0;text-shadow:0 0 24px #ffb347aa}.hero h1 span{color:#f6d98a}.hero .small{color:#f6d98a}.hero .sub{color:#ffe6b0}.jsr{color:#f6d98a;font-size:24px;margin-top:10px}.hero .orn{color:#f6d98a}
+.hero .btn.fill{background:linear-gradient(135deg,#f6d98a,#c8921f);border-color:#f6d98a;color:#4a0a0c}
+.fl{transform-box:fill-box;transform-origin:50% 100%;animation:fl 1s ease-in-out infinite alternate}@keyframes fl{to{transform:scaleY(1.22) scaleX(.82)}}
+body{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M20 0L40 20 20 40 0 20z' fill='none' stroke='%23b8862b' stroke-opacity='.18'/%3E%3C/svg%3E")}
+#invite{width:calc(100% - 24px);border:2px solid var(--gold);border-bottom:0;border-radius:999px 999px 0 0;padding-top:96px;margin-top:40px;background:linear-gradient(var(--card),transparent 85%);box-shadow:inset 0 0 0 7px var(--bg),inset 0 0 0 8px var(--line)}
+#invite:before{display:none}
+.venue{border-radius:999px 999px 18px 18px;padding-top:70px}
+h2{background:linear-gradient(90deg,var(--sun),var(--gold),var(--sun));-webkit-background-clip:text;background-clip:text;color:transparent}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute"><defs><g id="pt"><ellipse cx="0" cy="-62" rx="12" ry="30"/><ellipse cx="0" cy="-108" rx="7" ry="14"/></g><g id="mand" fill="none" stroke="currentColor" stroke-width="1.2"><circle r="22"/><circle r="128"/><circle r="136" stroke-dasharray="2 6"/><use href="#pt"/><use href="#pt" transform="rotate(30)"/><use href="#pt" transform="rotate(60)"/><use href="#pt" transform="rotate(90)"/><use href="#pt" transform="rotate(120)"/><use href="#pt" transform="rotate(150)"/><use href="#pt" transform="rotate(180)"/><use href="#pt" transform="rotate(210)"/><use href="#pt" transform="rotate(240)"/><use href="#pt" transform="rotate(270)"/><use href="#pt" transform="rotate(300)"/><use href="#pt" transform="rotate(330)"/></g><path id="bell" d="M0 0v30M-11 52q0-22 11-22t11 22z"/></defs></svg>
+<section class="hero">
+<svg class="scene" viewBox="0 0 400 800" preserveAspectRatio="xMidYMax slice"><g class="sunrot" style="color:#e8742a" transform="translate(200 250)"><use href="#mand" transform="scale(1.5)" opacity=".35"/></g><circle cx="200" cy="250" r="70" fill="#ff9a3c" opacity=".75"/><circle cx="200" cy="250" r="52" fill="#ffc060"/><ellipse cx="70" cy="170" rx="60" ry="14" fill="#fff" opacity=".6"/><ellipse cx="340" cy="330" rx="70" ry="14" fill="#fff" opacity=".5"/><path d="M0 600L70 480 130 560 200 440 270 550 340 470 400 580V800H0z" fill="#d9885a" opacity=".55"/><path d="M0 650L90 560 170 630 260 540 340 620 400 580V800H0z" fill="#a8502e" opacity=".7"/><g fill="#5a1a1a"><path d="M150 800V690h100V800z"/><path d="M160 690q40-70 80 0z"/><path d="M175 640q25-60 50 0z"/><path d="M188 600q12-46 24 0z"/><rect x="199" y="520" width="2" height="70"/><path d="M201 522l26 8-26 8z" fill="#e8742a"/><path d="M185 800v-40q15-24 30 0v40z" fill="#ffb347"/><path d="M110 800V730h30V800zM260 800V730h30V800z"/><path d="M105 730q20-30 40 0zM255 730q20-30 40 0z"/></g><g class="bells" fill="#d9a441" stroke="#d9a441" stroke-width="1.5"><g transform="translate(40 0)"><use href="#bell"/></g><g transform="translate(95 0)" class="b2"><use href="#bell" transform="scale(.8)"/></g><g transform="translate(305 0)" class="b2"><use href="#bell" transform="scale(.8)"/></g><g transform="translate(360 0)"><use href="#bell"/></g></g></svg>
+<svg class="tmp" viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6d98a"/><stop offset=".5" stop-color="#c8921f"/><stop offset="1" stop-color="#f6d98a"/></linearGradient><radialGradient id="gl" cx=".5" cy=".55" r=".65"><stop offset="0" stop-color="#ffb347"/><stop offset=".55" stop-color="#b8321c"/><stop offset="1" stop-color="#4a0a0c"/></radialGradient><pattern id="lt" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M6 0L12 6 6 12 0 6z" fill="none" stroke="#5a1a1a" stroke-width="1"/></pattern></defs><g fill="#ffe6b0" opacity=".6"><circle cx="40" cy="110" r="1.5"/><circle cx="350" cy="150" r="1.5"/><circle cx="90" cy="210" r="1"/><circle cx="320" cy="230" r="1"/><circle cx="20" cy="260" r="1.5"/><circle cx="382" cy="290" r="1.2"/></g><path d="M62 800V380C62 270 150 220 200 130C250 220 338 270 338 380V800z" fill="url(#gl)"/><g style="color:#ffd27a" transform="translate(200 450)" opacity=".22"><use href="#mand" transform="scale(1.15)"/></g><path d="M62 800V380C62 270 150 220 200 130C250 220 338 270 338 380V800" fill="none" stroke="url(#gd)" stroke-width="7"/><path d="M76 800V384C76 290 156 244 200 160C244 244 324 290 324 384V800" fill="none" stroke="#f6d98a" stroke-width="1.5" stroke-dasharray="3 5"/><g fill="url(#gd)"><rect x="14" y="334" width="34" height="466"/><rect x="352" y="334" width="34" height="466"/><rect x="8" y="318" width="46" height="16"/><rect x="346" y="318" width="46" height="16"/><path d="M12 318q19-46 38 0zM350 318q19-46 38 0z"/><path d="M186 134q14-34 28 0z"/><ellipse cx="200" cy="106" rx="10" ry="14"/></g><g fill="url(#lt)"><rect x="14" y="334" width="34" height="466"/><rect x="352" y="334" width="34" height="466"/></g><path d="M200 92V62" stroke="#f6d98a" stroke-width="3"/><path d="M202 64l24 8-24 8z" fill="#e8742a"/><path d="M0 30Q100 130 200 30Q300 130 400 30" fill="none" stroke="#ffa31a" stroke-width="13" stroke-linecap="round" stroke-dasharray="0 15"/><path d="M0 44Q100 144 200 44Q300 144 400 44" fill="none" stroke="#d9253a" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 11"/><g class="bells" fill="#f6d98a" stroke="#f6d98a" stroke-width="1.5"><g transform="translate(100 96)"><use href="#bell"/></g><g transform="translate(300 96)" class="b2"><use href="#bell"/></g><g transform="translate(200 66) scale(.7)" opacity=".0"><use href="#bell"/></g></g><g><g class="diya" transform="translate(90 772)"><path d="M-16 0q16 20 32 0z" fill="#c8921f"/><path class="fl" d="M0-4q-8-14 0-28q8 14 0 28z" fill="#ffd27a"/></g><g class="diya" transform="translate(150 784)"><path d="M-16 0q16 20 32 0z" fill="#c8921f"/><path class="fl" d="M0-4q-8-14 0-28q8 14 0 28z" fill="#ffd27a"/></g><g class="diya" transform="translate(250 784)"><path d="M-16 0q16 20 32 0z" fill="#c8921f"/><path class="fl" d="M0-4q-8-14 0-28q8 14 0 28z" fill="#ffd27a"/></g><g class="diya" transform="translate(310 772)"><path d="M-16 0q16 20 32 0z" fill="#c8921f"/><path class="fl" d="M0-4q-8-14 0-28q8 14 0 28z" fill="#ffd27a"/></g></g></svg>
+  <div class="jsr hi">जय श्री गणेश</div>
+  <div class="orn">❁ ❁ ❁</div>
+  <div class="small">Wedding Invitation</div>
+  <h1>Dhwani<span>&amp;</span>Pinkesh</h1>
+  <div class="sub">26 – 27 January 2027 · Mumbai</div>
+  <a class="btn fill" href="#invite">Scroll to Continue ↓</a>
+</section>
+
+<section id="invite" class="fade" style="position:relative"><svg class="mand-bg" viewBox="-150 -150 300 300" style="color:#b8862b"><use href="#mand"/></svg>
+  <div class="shloka hi">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</div>
+  <div class="small">Smt. Shantidevi Joshi &amp; Shri. Dayaram Joshi</div>
+  <p>With joy and the blessings of our elders, we invite you to the wedding of our dear son</p>
+  <div class="names">Pinkesh</div>
+  <div class="orn">and</div>
+  <div class="names">Dhwani</div>
+  <p>Beloved daughter of</p>
+  <div class="small">Smt. Krina Soni &amp; Shri. Krita Soni</div>
+</section>
+
+<section class="fade">
+  <h2>A Date To Remember</h2>
+  <div class="date"><div><b>26</b>JAN</div><div><b>27</b>JAN</div><div><b>2027</b>YEAR</div></div>
+  <p>Mark your calendars — our forever begins on this joyous day, and we would be honoured to have you by our side.</p>
+</section>
+
+<section class="fade">
+  <h2>Our Celebrations</h2>
+  <p class="sub">Save these dates, we would love to celebrate with you</p>
+  <div id="events"></div>
+</section>
+
+<section class="fade">
+  <h2>We Look Forward To Welcoming You</h2>
+  <div class="orn">❁</div>
+  <div class="venue">
+    <h3 style="font-family:'Cinzel Decorative',serif;margin:0 0 8px">Kasturi AC Dome</h3>
+    <div class="sub">Haldi, Sangeet, Baraat &amp; Shaadi</div>
+    <p>Amrutwani Satsang Road, behind Maxus Mall, Burhani Nagar, Bhayandar West, Mira Bhayandar, Mumbai, Maharashtra 401101, India</p>
+    <a class="btn" id="dir" target="_blank" rel="noopener" href="#">Get Directions</a>
+  </div>
+</section>
+
+<section class="fade">
+  <h2>Kindly Let Us Know You Are Coming</h2>
+  <p class="sub">Confirm your RSVP and send it to us on WhatsApp</p>
+  <form id="rsvp" onsubmit="return false">
+    <label for="nm">Your Name *</label>
+    <input type="text" id="nm" placeholder="Full name">
+    <div class="lbl">Will you be joining us?</div>
+    <div class="chips">
+      <label><input type="radio" name="att" value="Joyfully Accepts" checked> Joyfully Accepts</label>
+      <label><input type="radio" name="att" value="Regretfully Declines"> Regretfully Declines</label>
+    </div>
+    <div class="lbl">Which celebrations will you attend?</div>
+    <div class="chips" id="evchips"></div>
+    <label for="gn">Number of guests (including you)</label>
+    <input type="text" id="gn" inputmode="numeric" value="1">
+    <div class="lbl">Meal preference</div>
+    <div class="chips">
+      <label><input type="radio" name="meal" value="Vegetarian" checked> Vegetarian</label>
+      <label><input type="radio" name="meal" value="Jain"> Jain</label>
+      <label><input type="radio" name="meal" value="Non-Vegetarian"> Non-Vegetarian</label>
+    </div>
+    <label for="note">A little note for us</label>
+    <input type="text" id="note" placeholder="Optional">
+    <div style="text-align:center"><button class="btn fill" id="send" type="button">Confirm RSVP &amp; Send via WhatsApp</button></div>
+  </form>
+</section>
+
+<section class="fade">
+  <h2>Counting Down To Our Big Day</h2>
+  <p class="sub">Our families are delighted that you will join us for one of the happiest days of our lives</p>
+  <div class="cnt"><div><b id="cd">00</b><span>Days</span></div><div><b id="ch">00</b><span>Hours</span></div><div><b id="cm">00</b><span>Minutes</span></div><div><b id="cs">00</b><span>Seconds</span></div></div>
+</section>
+
+<footer>With love, the Joshi &amp; Soni families<br>Questions? <a href="https://wa.me/918082038517" style="color:var(--sun)">WhatsApp +91 80820 38517</a></footer>
+
+<script>
+var WA="918082038517";
+var VENUE="Kasturi AC Dome, Amrutwani Satsang Road, behind Maxus Mall, Bhayandar West, Mira Bhayandar, Maharashtra 401101";
+var EV=[
+ {n:"Haldi",d:"26th Jan 2027",t:"11:30 AM",s:"20270126T113000",e:"20270126T143000"},
+ {n:"Sangeet",d:"26th Jan 2027",t:"7:30 PM",s:"20270126T193000",e:"20270126T230000"},
+ {n:"Baraat",d:"27th Jan 2027",t:"3:30 PM",s:"20270127T153000",e:"20270127T173000"},
+ {n:"Shaadi",d:"27th Jan 2027",t:"5:30 PM",s:"20270127T173000",e:"20270127T220000"}
+];
+var map="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(VENUE);
+document.getElementById("dir").href=map;
+var box=document.getElementById("events"),chips=document.getElementById("evchips");
+EV.forEach(function(x){
+  var cal="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(x.n+" – Dhwani & Pinkesh")+"&dates="+x.s+"/"+x.e+"&ctz=Asia/Kolkata&location="+encodeURIComponent(VENUE);
+  box.insertAdjacentHTML("beforeend",'<div class="ev"><div class="d">'+x.d+'</div><h3>'+x.n+'</h3><div>'+x.t+' Onwards</div><div class="sub">Kasturi AC Dome, Bhayandar West</div><a href="'+map+'" target="_blank" rel="noopener">Get Directions</a><a href="'+cal+'" target="_blank" rel="noopener">Add to Calendar</a></div>');
+  chips.insertAdjacentHTML("beforeend",'<label><input type="checkbox" value="'+x.n+'" checked> '+x.n+'</label>');
+});
+document.getElementById("send").onclick=function(){
+  var nm=document.getElementById("nm").value.trim();
+  if(!nm){alert("Please tell us your name.");return;}
+  var att=document.querySelector('input[name=att]:checked').value;
+  var evs=[].slice.call(document.querySelectorAll('#evchips input:checked')).map(function(i){return i.value}).join(", ");
+  var meal=document.querySelector('input[name=meal]:checked').value;
+  var msg="Hi! This is "+nm+".\n"+att+" for Dhwani & Pinkesh’s wedding.\nCelebrations: "+(evs||"-")+"\nGuests: "+(document.getElementById("gn").value||1)+"\nMeal: "+meal;
+  var n=document.getElementById("note").value.trim();if(n)msg+="\nNote: "+n;
+  window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank");
+};
+var target=new Date("2027-01-27T17:30:00+05:30").getTime();
+function tick(){var d=Math.max(0,target-Date.now()),p=function(v){return String(v).padStart(2,"0")};
+ document.getElementById("cd").textContent=p(Math.floor(d/864e5));
+ document.getElementById("ch").textContent=p(Math.floor(d%864e5/36e5));
+ document.getElementById("cm").textContent=p(Math.floor(d%36e5/6e4));
+ document.getElementById("cs").textContent=p(Math.floor(d%6e4/1e3));}
+function petal(){var p=document.createElement('i'),c=['#f08a4b','#e8742a','#ffb347','#d9534f'];p.className='petal';p.style.left=Math.random()*100+'vw';p.style.background=c[Math.floor(Math.random()*4)];p.style.animationDuration=7+Math.random()*6+'s';document.body.appendChild(p);setTimeout(function(){p.remove()},13000)}
+setInterval(petal,1400);
+tick();setInterval(tick,1000);
+var io=new IntersectionObserver(function(a){a.forEach(function(e){if(e.isIntersecting)e.target.classList.add("in")})},{threshold:.15});
+document.querySelectorAll(".fade").forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
